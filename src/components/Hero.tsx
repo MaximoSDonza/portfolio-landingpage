@@ -4,6 +4,7 @@ import { textosUi } from '../data/uiData'
 import { useIdioma } from '../hooks/useIdioma'
 import { useLocalTime } from '../hooks/useLocalTime'
 import type { SeccionProps, Ubicacion } from '../types'
+import { rutaPublica } from '../utils/rutas'
 import { esAnclaVisible } from '../utils/secciones'
 
 // Los botones que apuntan a una sección oculta (sin contenido) no se muestran.
@@ -40,7 +41,7 @@ const FotoPerfil = () => {
     <div className="relative aspect-[4/5] w-32 shrink-0 overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-800/50 sm:w-40 md:order-last md:w-52 lg:w-64">
       {foto && !error ? (
         <img
-          src={foto}
+          src={rutaPublica(foto)}
           alt={`${nombre} ${apellido}`}
           fetchPriority="high"
           onError={alFallar}
@@ -102,7 +103,7 @@ const Hero = ({ id }: SeccionProps) => {
               </a>
             ))}
             {cv && (
-              <a href={t(cv)} download className="boton boton-secundario">
+              <a href={rutaPublica(t(cv))} download className="boton boton-secundario">
                 {t(textosUi.cv)}
                 <i className="fa-solid fa-download text-xs" aria-hidden="true" />
               </a>
