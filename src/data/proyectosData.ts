@@ -23,16 +23,16 @@ export const textosProyectos = {
 // Proyectos, repo y demo son opcionales.
 export const proyectosList: Proyecto[] = [
     // Proyecto de ejemplo
-    /*{
-        nombre: "TurnoYa",
-        anio: 2025,
+    {
+        nombre: "Portfolio",
+        anio: 2026,
         tipo: "personal",
         descripcion: {
-            es: "Sistema de reserva de turnos para consultorios: agenda en tiempo real, recordatorios por email y panel para profesionales.",
-            en: "Appointment booking system for medical offices: real-time scheduling, email reminders and a dashboard for practitioners.",
+            es: "Sitio web personal desarrollado como una landing page interactiva y responsiva. Su objetivo es presentar mi perfil profesional, proyectos destacados, experiencia laboral, educación y habilidades.",
+            en: "A personal website developed as an interactive and responsive landing page. Its purpose is to showcase my professional profile, featured projects, work experience, education, and skills.",
         },
-        tecnologias: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-        repo: "https://github.com/tu-usuario/turnoya",
-        demo: "https://turnoya.example.com",
-    },*/
+        tecnologias: ["React", "TypeScript", "Tailwindcss"],
+        repo: "https://github.com/MaximoSDonza/portfolio-landingpage",
+        demo: "https://maximosdonza.github.io/portfolio-landingpage/",
+    },
 ]
